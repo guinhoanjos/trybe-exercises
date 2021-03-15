@@ -2,8 +2,4 @@
 -Bash
 -Git
 -Html
--CssUnix
--Bash
--Git
--Html
 -Css
