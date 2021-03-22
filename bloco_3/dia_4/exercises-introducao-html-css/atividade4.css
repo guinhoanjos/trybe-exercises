@@ -11,12 +11,13 @@
     margin-bottom: 5px;
 }
 .gif{
+    border:5px solid blue;
     width: 250px;
+    display: inline;
 }
 .about{
     display: inline-block;
-
-}
+   }
 .section1{
     position: relative;
     left: 400px
@@ -37,4 +38,16 @@ ul{
 .italic{
     font-style: italic;
     
+}
+.vision{
+    width: 300px;
+    text-align: center;
+    display:inline-block
+    position: relative;
+}
+.onepunch{
+    position: relative;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
 }
