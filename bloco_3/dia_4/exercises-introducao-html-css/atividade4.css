@@ -1,0 +1,66 @@
+*{
+    position: relative;
+}
+.header{
+    background-color: aqua;
+    position: relative;
+    color: blue;
+    border:5px solid blue;
+    bottom: 5px;
+    
+}
+.header2{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.gif{
+    border:5px solid blue;
+    width: 250px;
+    display: inline;
+}
+.about{
+    display: inline-block;
+   }
+.section1{
+    position: relative;
+    left: 400px
+}
+.section1 h2{
+    text-align:center;
+    background-color: aquamarine;
+    display: block;
+    width: 500px;
+    
+}
+li{
+    font-size: 14px;
+}
+.main{
+
+    display: block;
+}
+
+.italic{
+    font-style: italic;
+    
+}
+.vision{
+    margin-left: 10px;
+    background-color: blueviolet;
+    width: 300px;
+    text-align: center;
+    display:inline-block
+    
+}
+.onepunch{
+    margin-left: 10px;
+    background-color: crimson;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+ul{
+    position: relative; 
+    bottom: 25px;
+    left: -10px;
+ 
