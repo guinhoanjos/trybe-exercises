@@ -122,14 +122,17 @@
        let h1Position =  document.querySelectorAll("h1")[0];
        h1Position.className = "title";
 
-       //2 - pode ser refatorado
+       //2  
        let arrayh3 = document.querySelectorAll("h3");
 
        for (let index3 = 0; index3 < arrayh3.length; index3 +=1){
 
         arrayh3[index3].className = "description";
        }
-       
+       //3
+       let localeExercise6 = document.querySelector(".left-content");
+
+       document.querySelector(".main-content").removeChild(localeExercise6);
        
       
 
