@@ -92,7 +92,24 @@
 
         document.querySelector(".left-content").appendChild(createImg1);
 
-        
+        //8
+        let countNumbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+        let createListOrd = document.createElement("ol");
+        let localeList = document.querySelector(".right-content");
+
+        localeList.appendChild(createListOrd);
+        let localeList2 = document.querySelector(".right-content").firstElementChild;
+
+         
+        for(let index = 0; index < countNumbers.length; index += 1) {
+           let numbers = countNumbers[index];
+           let createOrder = document.createElement("li");
+
+           createOrder.innerText = numbers;
+
+           localeList2.appendChild(createOrder);
+           
+        }
       
 
 
