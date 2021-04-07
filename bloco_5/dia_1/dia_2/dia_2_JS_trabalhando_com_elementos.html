@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //1
+        let fistH1 = document.createElement("h1");
+        fistH1.innerText ="Exercício 5.2 - JavaScript DOM";   
+        document.body.appendChild(fistH1);
+        //2
+        let createDiv1 = document.createElement("div");
+        createDiv1.className = "main-content";
+        document.body.appendChild(createDiv1);
+        //3
+        let createDiv2 = document.createElement("div");
+        createDiv2.className = "center-content";
+        let divPasso2 = document.querySelector(".main-content");
+        divPasso2.appendChild(createDiv2);
+        //4
+        let createTagP1 = document.createElement("p");
+        createTagP1.innerText = "Algum texto";
+        document.querySelector(".center-content").appendChild(createTagP1);
+        //5
+
+        let createDiv3 = document.createElement("div");
+        createDiv3.className = "left-content";
+        document.querySelector(".main-content").appendChild(createDiv3);
+
+        //6
+        let createDiv4 = document.createElement("div");
+        createDiv4.className = "right-content";
+        document.querySelector(".main-content").appendChild(createDiv4);
+
+        //7
+        let createImg1 = document.createElement("img");
+        createImg1.className = "small-image";
+        createImg1.src = "https://picsum.photos/200";
+
+        document.querySelector(".left-content").appendChild(createImg1);
+
+        //8
+        let countNumbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+        let createListOrd = document.createElement("ol");
+        let localeList = document.querySelector(".right-content");
+
+        localeList.appendChild(createListOrd);
+        let localeList2 = document.querySelector(".right-content").firstElementChild;
+
+         
+        for(let index = 0; index < countNumbers.length; index += 1) {
+           let numbers = countNumbers[index];
+           let createOrder = document.createElement("li");
+
+           createOrder.innerText = numbers;
+
+           localeList2.appendChild(createOrder);
+           
+        }
+      
+        //9
+        for (let index2 = 0; index2 < 3; index2 +=1){
+
+            let h3Child1 = document.createElement("h3");
+            divPasso2.appendChild(h3Child1);
+        }
+        //exercicio parte 2
+        //1
+       let h1Position =  document.querySelectorAll("h1")[0];
+       h1Position.className = "title";
+
+       //2  
+       let arrayh3 = document.querySelectorAll("h3");
+
+       for (let index3 = 0; index3 < arrayh3.length; index3 +=1){
+
+        arrayh3[index3].className = "description";
+       }
+       //3
+       let localeExercise6 = document.querySelector(".left-content");
+
+       document.querySelector(".main-content").removeChild(localeExercise6);
+       //4
+       localeList.style.marginRight = "auto";
+
+       //5
+       let fatherPart3 = document.querySelector(".center-content").parentElement;
+       fatherPart3.style.backgroundColor = "green";
+       //6
+       let olPosition = document.querySelectorAll("ol")[0];
+       olPosition.removeChild(olPosition.lastChild);
+       olPosition.removeChild(olPosition.lastChild);
+       
+
+</script>
+  </body>
+</html>
