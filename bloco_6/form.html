@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+
+        <fieldset>
+            <label>Nome
+                <input type="text" name="nome" maxlength="40" required autofocus>
+            </label>
+            <br>
+            <br>
+            <label>E-mail
+                <input type="text" name="email" maxlength="50" required>
+            </label>
+            <br>
+            <br>
+            <label>CPF
+                <input type="text" name="cpf" maxlength="11" required>
+            </label>
+            <br>
+            <br>
+            <label>Endereço
+                <input type="text" name="endereço" maxlength="200" required>
+            </label>
+            <br>
+            <br>
+            <label>Cidade
+                <input type="text" name="cidade" maxlength="28" required>
+            </label>
+            <br><br>
+            <label>Estado
+                <select name="estado" id="state">
+                    
+                </select>
+            </label>
+            <br><br>
+            <input type="radio" name="casaouape">Apartamento
+            <input type="radio" name="casaouape">Casa
+        </fieldset>
+        <fieldset>
+            <label>Resumo do currículo
+                <br>
+                <textarea name="resumo" id="" cols="30" rows="10" maxlength="1000" required></textarea>
+            </label>
+            <br><br>
+            <label>Último cargo
+                <input type="text" name="cargo" maxlength="40" required>
+            </label>
+            <br><br>
+            <label>Resumo do cargo
+                <input type="text" maxlength="500" required>
+            </label>
+            <br><br>
+            <input type="text" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" title="date">
+        </fieldset>
+        <input type="submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
