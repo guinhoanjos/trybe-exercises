@@ -1,10 +1,28 @@
-const butao = document.querySelector('#button');
-const contadoor = document.querySelector('#click-count');
-let clickCount = 0;
+const array = ["Android", "iOS", "Architecture", "Teach", "Run"]
 
-contadoor.innerText = 'oi'
+function buildSkillsPhrase (paramOne) {
+    const fun1 = paramInner => (
+      `Tryber ${paramInner} aqui!
 
-butao.addEventListener('click', ()=> {
-    clickCount += 1;
-    contadoor.innerText =clickCount.toString();
-})
+      Tudo bem?`
+    )
+
+    let result = `${fun1(paramOne)}
+
+    Minhas cinco principais habilidades são:`
+
+    array.forEach((skill, index) =>
+    result = `${result}
+
+    - ${skill}`)
+
+    result = `
+{result}
+
+    #goTrybe
+    `
+
+    return result
+}
+
+console.log(buildSkillsPhrase("Lucas"))

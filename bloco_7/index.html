@@ -12,6 +12,13 @@
         <h4>Contador de Clicks</h4>
         <p id="click-count"></p>
     </div>
-    <script src="script.js"></script>
+    <script>
+        const butao = document.querySelector('#button');
+        const contadoor = document.querySelector('#click-count');
+        let clickCount = 0;
+        butao.addEventListener('click', ()=> {
+            clickCount += 1;
+            contadoor.innerText =clickCount.toString();
+        })</script>
 </body>
 </html>
