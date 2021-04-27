@@ -1,7 +1,13 @@
-if (true) {
-    // inicio do escopo do if
-    let userAge = "20";
-    console.log(userAge); // 20
-    // fim do escopo do if
+const testingScope = escopo => {
+  if (escopo === true) {
+    let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
+    ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
+    console.log(ifScope);
+  } else {
+    let elseScope = `Não devo ser utilizada fora meu escopo (else)`;
+    console.log(elseScope);
   }
-  console.log(userAge); // 20
+
+}
+
+testingScope(true);
