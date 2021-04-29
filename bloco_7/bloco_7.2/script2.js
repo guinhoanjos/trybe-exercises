@@ -1,3 +1,4 @@
+const assert = require('assert')
 const lesson1 = {
     materia: 'Matemática',
     numeroEstudantes: 20,
@@ -18,9 +19,27 @@ const lesson1 = {
     turno: 'noite',
   };
 
-  function addTurnoManha(objeto, chave, valor) {
-    return objeto.chave = valor;
-  }
-  addTurnoManha(lesson2, turno, 'manhã');
+  const addTurnoManha = (objeto, chave, valor) => objeto[chave] = valor;
 
-  console.log(lesson2)
+  addTurnoManha(lesson2, 'turno', 'manhã');
+  
+
+
+  const listarKeys = (objeto) => Object.keys(objeto);
+  
+
+
+
+const tamanhoDoObjeto = (objeto) => Object.entries(lesson2).length;
+
+
+const listarValores = (objeto) =>  Object.values(objeto);
+  
+const allLessons = {
+  lesson1,
+  lesson2,
+  lesson3,
+};
+
+const numeroDeEstudantes = () => allLessons.lesson1.numeroEstudantes + allLessons.lesson2.numeroEstudantes + allLessons.lesson3.numeroEstudantes;
+
