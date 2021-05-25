@@ -1,9 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Task = (value) => {
+  return (
+    <li key={value}>{value}</li>
+  );
+}
+
+const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+
 function App() {
   return (
     <div className="App">
+      <ol>
+      {tarefas.map((value) => {
+        return Task(value);
+      })}
+      </ol>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
